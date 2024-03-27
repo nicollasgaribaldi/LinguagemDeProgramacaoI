@@ -7,16 +7,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        double salario = 10000;
+        double salario = 800;
+        double imposto;
 
         if (salario<=900) {
             System.out.println("Você recebe R$"+salario+" e está ISENTO de desconto.");
         } else if (salario>=901 && salario<=1500) {
-            System.out.println("Você recebe R$"+salario+" e sofrerá 5% de desconto.");
-        } else if (salario>=1501 && salario<=2500) {
-            System.out.println("Você recebe R$"+salario+" e sofrerá 10% de desconto.");
+            imposto = (salario*5/100);
+            System.out.println("Você recebe R$"+salario+" e sofrerá desconto de 5%, o imposto é "+imposto+".");
+        } else if (salario>=1501 && salario<=2500) {            imposto = (salario*5/100);
+            System.out.println("Você recebe R$"+salario+" e sofrerá desconto de 10%, o imposto é "+imposto+".");
         } else {
-            System.out.println("Você recebe R$"+salario+" e sofrerá 20% de desconto.");
+            imposto = (salario*5/100);
+            System.out.println("Você recebe R$"+salario+" e sofrerá desconto de 20%, o imposto é "+imposto+".");
         }
     }
 }
