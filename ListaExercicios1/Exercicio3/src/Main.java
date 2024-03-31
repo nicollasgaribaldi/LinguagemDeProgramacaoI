@@ -5,12 +5,12 @@
 public class Main {
     public static void main(String[] args) {
         double ladoA = 10;
-        double ladoB = 20;
-        double ladoC = 30;
+        double ladoB = 10;
+        double ladoC = 10;
 
         if (ladoA == ladoB && ladoA == ladoC) {
             System.out.println("O triângulo é Equilátero.");
-        } else if (ladoA != ladoB && ladoA == ladoC || ladoA == ladoB && ladoA != ladoC || ladoA != ladoB && ladoA != ladoC) {
+        } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
             System.out.println("O triângulo é Isósceles.");
         }else {
             System.out.println("O triângulo é Escaleno.");
